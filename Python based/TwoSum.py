@@ -36,31 +36,27 @@ def twoSum(nums, target):
     # print(target)
 
     # 2) Step two I will loop through the array thats it
-    for num in nums:
-        pass
+    #for num in range(1,len(nums)):
+        #print(num)
         #Nothing fancy just printing the values of the array thats how I am approaching
         #print(num);
     
 
     #3) Step three I will loop through all elements of array one after another and will check if it is equal to target
     newArr = []
-    i = 0
-    j = 0
-    for val1 in nums:
+    for i in range(0,len(nums)):
         #Nothing fancy just printing the values of the array thats how I am approaching
-        for val2 in nums:
+        for j in range(i+1,len(nums)):
             sum = nums[i] + nums[j]
             if (sum == target):
                 newArr.append(i)
                 newArr.append(j)
+                 #Thats it I got it and now lets return 
                 return newArr
             #Incrementing inside loop count
-            j = j + 1
         #Incrementing outside loop count
-        i = i + 1    
         #console.log(nums[i]);
-    print("The final array is : ", newArr)
-    #Thats it I got it and now lets return 
+   
     return newArr;
     #############################Function ended here##############################3
 
