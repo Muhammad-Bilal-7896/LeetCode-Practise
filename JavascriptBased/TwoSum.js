@@ -35,7 +35,12 @@
     // console.log(nums)
     // console.log(target)
 
-    //2) Step two
+    //2) Step two I will loop through the array thats it
+    for(let i=0;i<nums.length;i++)
+    {
+        //Nothing fancy just printing the values of the array thats how I am approaching
+        console.log(nums[i]);
+    }
 
 };
 
