@@ -32,7 +32,7 @@ def twoSum(nums, target):
     # print(nums)
     # print(target)
 
-    newArr = []
+    largerArr=[] #Will store two value array of all possible combinations
     for i in range(0,len(nums)):    
         for j in range(i+1,len(nums)):
             if(nums[i]+nums[j]==target):
@@ -40,13 +40,17 @@ def twoSum(nums, target):
                 #newArr[0] = i
                 #newArr[1] = j
                 #Is tarah c++ mein hoga
-                newArr.append(i)
-                newArr.append(j)
-                return newArr
-
+                #Appending in larger array
+                largerArr.append(i)
+                largerArr.append(j)
+                break
+                # I am not returning here I am getting all pairs
+                #return newArr
+    #Returning larger array that contains all combinations            
+    return largerArr            
 #Here the main is starting 
 target = 9
-arr = [2,7,11,15]
+arr = [5,4,7,3,2]
 print("The result is equal to : ",twoSum(arr,target))
 
 
