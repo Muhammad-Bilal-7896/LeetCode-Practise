@@ -36,13 +36,12 @@ function twoSum(nums, target) {
     // console.log(target)
 
     //2) Step two I will loop through the array thats it
-    for (let i = 0; i < nums.length; i++) {
-        //Nothing fancy just printing the values of the array thats how I am approaching
-        console.log(nums[i]);
-    }
+    // for (let i = 0; i < nums.length; i++) {
+    //     //Nothing fancy just printing the values of the array thats how I am approaching
+    //     console.log(nums[i]);
+    // }
 
-    //3) Step three I will make a variable that will store the result when looping through the array
-    //This will store the final result
+    //3) Step three I will loop through all elements of array one after another and will check if it is equal to target
     let newArr = [];
     // //3) Step three I will make a variable that will store the result when looping through the array
     //This will store the final result
